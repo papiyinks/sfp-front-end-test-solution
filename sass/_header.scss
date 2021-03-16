@@ -1,0 +1,198 @@
+.header {
+    background: url("../assets/images/hero-bg.jpg") bottom center / cover no-repeat;
+    min-height: 400px;
+    position: relative;
+
+    .hero-text-container {
+        position: absolute;
+        right: 10%;
+        bottom: 50%;
+        width: 19rem;
+        z-index: 5;
+        text-align: center;
+        text-transform: uppercase;
+
+        .hero-text {
+            font-size: 35px;
+            color: $color-white;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+    }
+
+    .phone-section {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: $bp-sm) {
+    .header {
+        .hero-text-container {
+            right: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: $bp-md) {
+    .header {
+        min-height: 600px;
+    
+        .hero-text-container {
+            right: 3%;
+            bottom: 45%;
+            width: 19rem;
+            text-align: start;
+    
+            .hero-text {
+                font-size: 28px;
+            }
+        }
+    
+        .phone-section {
+            display: block;
+            
+            .phone { 
+                height: 30rem;
+                position: absolute;
+                top: 23%;
+                left: 12%;
+                z-index: 3;
+            }
+        
+            .phone-bg {
+                width: 15.1rem;
+                height: 22rem;
+                object-fit: cover;
+                position: absolute;
+                z-index: 5;
+                top: 37%;
+                left: 13.6%;
+            }
+        
+            .phone-logo {
+                position: absolute;
+                width: 11rem;
+                z-index: 6;
+                top: 42%;
+                left: 18%;
+            }
+        
+            .phone-text-container {
+                text-transform: uppercase;
+                position: absolute;
+                bottom: 8%;
+                left: 14%;
+                z-index: 10;
+                display: grid;
+                width: 14rem;
+        
+                .discover {
+                    font-size: 37px;
+                    color: $color-white;
+                    font-weight: 300;
+                }
+        
+                .adventure {
+                    justify-self: end;
+                    font-size: 16px;
+                    color: $color-white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }    
+}
+
+@media only screen and (min-width: $bp-lg) {
+    .header {
+        .hero-text-container {
+            right: 7%;
+        }
+
+        .phone-section {
+            .phone-bg {
+                height: 21.6rem;
+                left: 13.2%;
+            }
+
+            .phone-logo {
+                left: 16.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $bp-xl) {
+    .header {
+        .hero-text-container {
+            right: 7%;
+            width: 24rem;
+
+            .hero-text {
+                font-size: 35px;
+            }
+        }
+
+        .phone-section {
+            .phone-bg {
+                left: 13%;
+            }
+
+            .phone-logo {
+                left: 16%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $bp-2xl) {
+    .header {
+        min-height: 800px;
+    
+        .hero-text-container {
+            right: 17%;
+            bottom: 50%;
+            z-index: 5;
+            width: 25rem;
+    
+            .hero-text {
+                font-size: 40px;
+            }
+        }
+    
+        .phone-section {
+            .phone { 
+                height: 41rem;
+                top: 20%;
+                left: 12%;
+            }
+        
+            .phone-bg {
+                width: 20.7rem;
+                height: 30rem;
+                top: 34%;
+                left: 13.1%;
+            }
+        
+            .phone-logo {
+                width: 13rem;
+                top: 42%;
+                left: 17.5%;
+            }
+        
+            .phone-text-container {
+                bottom: 8%;
+                left: 14%;
+                width: 19rem;
+        
+                .discover {
+                    font-size: 46px;
+                }
+        
+                .adventure {
+                    font-size: 18px;
+                }
+            }
+        }
+    }    
+}
